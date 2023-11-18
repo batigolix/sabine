@@ -18,7 +18,8 @@
         "composer/installers": "^2.0",
         "drupal/core-composer-scaffold": "^10.1",
         "drupal/core-project-message": "^10.1",
-        "drupal/core-recommended": "^10.1"
+        "drupal/core-recommended": "^10.1",
+        "drush/drush": "^12.4"
     },
     "conflict": {
         "drupal/drupal": "*"
@@ -33,12 +34,24 @@
             "phpstan/extension-installer": true,
             "dealerdirect/phpcodesniffer-composer-installer": true
         },
-        "sort-packages": true
+        "sort-packages": true,
+        "bin-dir": "bin/",
+        "discard-changes": true
     },
     "extra": {
         "drupal-scaffold": {
             "locations": {
                 "web-root": "web/"
+            },
+            "excludes": [
+                "robots.txt",
+                ".htaccess",
+                "sites/development.services.yml"
+            ],
+            "file-mapping": {
+                "[web-root]/robots.txt": false,
+                "[web-root]/.htaccess": false,
+                "[web-root]/sites/development.services.yml": false
             }
         },
         "installer-paths": {
