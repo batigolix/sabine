@@ -1,0 +1,22 @@
+uuid: 871ec5d3-d814-44de-a847-79f45fd750e0
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - prologue
+_core:
+  default_config_hash: eYL19CLDyinGTWYQfBD1DswWzglEotE_kHnHx3AxTXM
+id: prologue_powered
+theme: prologue
+region: nav
+weight: 0
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  label_display: '0'
+  provider: system
+visibility: {  }

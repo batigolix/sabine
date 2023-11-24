@@ -1,0 +1,10 @@
+{
+  "name": "prologue",
+  "scripts": {
+    "build": "sass scss css",
+    "watch": "sass assets/sass:assets/css -w"
+  },
+  "dependencies": {
+    "sass": "^1.49.8"
+  }
+}

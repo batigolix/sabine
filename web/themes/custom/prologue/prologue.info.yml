@@ -1,0 +1,13 @@
+name: Prologue
+type: theme
+description: 'Prologue HTML5 Up theme'
+package: Other
+libraries:
+  - prologue/global-styling
+  - prologue/custom
+base theme: stable9
+
+regions:
+  nav: Navigation
+  content: Content
+core_version_requirement: ^9 || ^10

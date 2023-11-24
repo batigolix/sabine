@@ -1,0 +1,22 @@
+uuid: 704cd26a-1d1c-457d-bf73-02847ac32af4
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - prologue
+_core:
+  default_config_hash: erQSEZF2XUjNmgTl0uNRBzmg18ZGXwUcw2FhApoeuHk
+id: prologue_content
+theme: prologue
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

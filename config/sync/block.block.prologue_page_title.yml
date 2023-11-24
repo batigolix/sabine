@@ -1,0 +1,20 @@
+uuid: 0e2801e6-2186-4610-95af-d88263cf980e
+langcode: en
+status: true
+dependencies:
+  theme:
+    - prologue
+_core:
+  default_config_hash: 6aOgWsNTXjqrDm98TXSAjP6qd2nCijD1xw45MrnbK-Y
+id: prologue_page_title
+theme: prologue
+region: nav
+weight: -5
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }

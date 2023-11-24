@@ -1,0 +1,63 @@
+<?php
+
+/**
+ * @file
+ * Functions to support theming in the massively theme.
+ */
+
+use Drupal\Core\Render\Markup;
+
+///**
+// * Implements hook_page_attachments_alter().
+// */
+//function massively_page_attachments_alter(array &$page) {
+//  $viewport = [
+//    '#type' => 'html_tag',
+//    '#tag' => 'meta',
+//  ];
+//  $page['#attached']['html_head'][] = [$viewport, 'viewport'];
+//  $fallback = '<link href="/themes/custom/massively/assets/css/noscript.css" rel="stylesheet" />';
+//  $noscript = [
+//    '#tag' => 'noscript',
+//    '#value' => Markup::create($fallback),
+//  ];
+//  $page['#attached']['html_head'][] = [$noscript, 'fallback'];
+//}
+//
+///**
+// * Implements hook_preprocess_page() for page.html.twig.
+// */
+//function massively_preprocess_page(array &$variables) {
+//  $form = \Drupal::formBuilder()
+//    ->getForm('Drupal\doesdesign_tools\Form\ContactForm');
+//  $variables['contact_form'] = $form;
+//}
+//
+///**
+// * Implements hook_theme_suggestions_page_alter().
+// */
+//function massively_theme_suggestions_page_alter(array &$suggestions, array $variables) {
+//
+//}
+//
+///**
+// * Implements hook_preprocess_menu_local_task().
+// */
+//function massively_preprocess_menu_local_task(array &$variables) {
+//  $variables['element']['#link']['url']->setOption('attributes', ['class' => 'button']);
+//  if ($variables['element']['#active']) {
+//    $variables['element']['#link']['url']->setOption('attributes', ['class' => 'button primary']);
+//  }
+//}
+//
+///**
+// * Adds tag to all pages.
+// */
+//function massively_page_attachments(array &$page) {
+//  $fallback = '<link href="fallback.css" rel="stylesheet" />';
+//  $noscript = [
+//    '#tag' => 'noscript',
+//    '#value' => Markup::create($fallback),
+//  ];
+//  $page['#attached']['html_head'][] = [$noscript, 'mymodule'];
+//}

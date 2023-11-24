@@ -22,10 +22,10 @@
         "drupal/core-project-message": "^10.1",
         "drupal/core-recommended": "^10.1",
         "drupal/ctools": "^4.0",
-        "drupal/devel": "^5.1",
         "drupal/environment_indicator": "^4.0",
         "drupal/gin": "^3.0@RC",
         "drupal/gin_toolbar": "^1.0@RC",
+        "drupal/paragraphs": "^1.16",
         "drupal/pathauto": "^1.12",
         "drush/drush": "^12.4"
     },
@@ -112,5 +112,10 @@
                 "      composer remove drupal/core-project-message"
             ]
         }
+    },
+    "require-dev": {
+        "drupal/coder": "^8.3",
+        "drupal/core-dev": "^10.1",
+        "drupal/devel": "^5.1"
     }
 }
