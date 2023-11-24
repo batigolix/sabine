@@ -49,6 +49,7 @@ jobs:
         with:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
+#         Content of SSH private key. e.g., raw content of ~/.ssh/id_rsa https://github.com/appleboy/ssh-action
           key: ${{ secrets.PRIVATE_KEY }}
           port: 7822
           debug: true
@@ -60,7 +61,7 @@ jobs:
             git reset --hard
             git checkout master
             git pull origin master
-            ${{ secrets.COMPOSER }} install --prefer-dist --no-progress --no-suggest --quiet --ignore-platform-reqs
+            composer install --prefer-dist --no-progress --no-suggest --quiet --ignore-platform-reqs
             chmod a-w web/sites/default
             chmod a-w web/sites/default/settings.php
             bin/drush deploy
