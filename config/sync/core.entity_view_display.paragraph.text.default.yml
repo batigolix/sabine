@@ -4,8 +4,11 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.text.field_body
+    - field.field.paragraph.text.field_image
+    - field.field.paragraph.text.field_title
     - paragraphs.paragraphs_type.text
   module:
+    - image
     - text
 id: paragraph.text.default
 targetEntityType: paragraph
@@ -14,7 +17,25 @@ mode: default
 content:
   field_body:
     type: text_default
-    label: above
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_title:
+    type: text_default
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     weight: 0

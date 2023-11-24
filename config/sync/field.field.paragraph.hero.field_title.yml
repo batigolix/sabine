@@ -4,7 +4,7 @@ status: true
 dependencies:
   config:
     - field.storage.paragraph.field_title
-    - filter.format.restricted_html
+    - filter.format.basic_html
     - paragraphs.paragraphs_type.hero
   module:
     - text
@@ -20,5 +20,5 @@ default_value: {  }
 default_value_callback: ''
 settings:
   allowed_formats:
-    - restricted_html
+    - basic_html
 field_type: text_long

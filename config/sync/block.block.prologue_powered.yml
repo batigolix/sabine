@@ -1,6 +1,6 @@
 uuid: 871ec5d3-d814-44de-a847-79f45fd750e0
 langcode: en
-status: true
+status: false
 dependencies:
   module:
     - system
@@ -10,8 +10,8 @@ _core:
   default_config_hash: eYL19CLDyinGTWYQfBD1DswWzglEotE_kHnHx3AxTXM
 id: prologue_powered
 theme: prologue
-region: nav
-weight: 0
+region: content
+weight: 4
 provider: null
 plugin: system_powered_by_block
 settings:
