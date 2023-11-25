@@ -1,0 +1,16 @@
+
+{% block content %}
+<div id="logo">
+  {% if site_logo %}
+    <span class="image avatar48">
+    <a href="{{ path('<front>') }}" rel="home">
+      <img src="{{ site_logo }}" alt="{{ 'Home'|t }}" />
+    </a>
+      </span>
+  {% endif %}
+  {% if site_name %}
+    <h1 id="title"><a href="{{ path('<front>') }}" rel="home">{{ site_name }}</a></h1>
+  {% endif %}
+  <p>{{ site_slogan }}</p>
+</div>
+{% endblock %}

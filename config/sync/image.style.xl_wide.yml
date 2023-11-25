@@ -1,0 +1,15 @@
+uuid: fafb5f1d-703a-4efe-94b6-a6e363c127f0
+langcode: en
+status: true
+dependencies: {  }
+name: xl_wide
+label: 'Extra large wide (1400 x 422)'
+effects:
+  096fd410-526b-4129-a6e3-4bb7a8855632:
+    uuid: 096fd410-526b-4129-a6e3-4bb7a8855632
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 1400
+      height: 422
+      anchor: center-center
