@@ -5,7 +5,8 @@ dependencies:
   config:
     - field.field.paragraph.text.field_body
     - field.field.paragraph.text.field_image
-    - field.field.paragraph.text.field_title
+    - field.field.paragraph.text.field_plain_title
+    - image.style.xl_wide
     - paragraphs.paragraphs_type.text
   module:
     - image
@@ -27,16 +28,17 @@ content:
     label: hidden
     settings:
       image_link: ''
-      image_style: ''
+      image_style: xl_wide
       image_loading:
         attribute: lazy
     third_party_settings: {  }
     weight: 1
     region: content
-  field_title:
-    type: text_default
+  field_plain_title:
+    type: string
     label: hidden
-    settings: {  }
+    settings:
+      link_to_entity: false
     third_party_settings: {  }
     weight: 0
     region: content

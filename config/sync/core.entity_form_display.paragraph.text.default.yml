@@ -5,8 +5,8 @@ dependencies:
   config:
     - field.field.paragraph.text.field_body
     - field.field.paragraph.text.field_image
-    - field.field.paragraph.text.field_title
-    - image.style.xl_wide
+    - field.field.paragraph.text.field_plain_title
+    - image.style.thumbnail
     - paragraphs.paragraphs_type.text
   module:
     - image
@@ -32,14 +32,14 @@ content:
     region: content
     settings:
       progress_indicator: throbber
-      preview_image_style: xl_wide
+      preview_image_style: thumbnail
     third_party_settings: {  }
-  field_title:
-    type: text_textarea
+  field_plain_title:
+    type: string_textfield
     weight: 0
     region: content
     settings:
-      rows: 2
+      size: 60
       placeholder: ''
     third_party_settings: {  }
 hidden:
