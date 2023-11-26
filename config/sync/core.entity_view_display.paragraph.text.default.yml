@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.paragraph.text.field_background_color
     - field.field.paragraph.text.field_body
     - field.field.paragraph.text.field_image
     - field.field.paragraph.text.field_plain_title
@@ -42,4 +43,5 @@ content:
     third_party_settings: {  }
     weight: 0
     region: content
-hidden: {  }
+hidden:
+  field_background_color: true

@@ -1,0 +1,32 @@
+uuid: 6df15714-4811-45d4-a173-63f7f741d2da
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.contact_form.field_background_color
+    - field.field.paragraph.contact_form.field_body
+    - field.field.paragraph.contact_form.field_title
+    - paragraphs.paragraphs_type.contact_form
+  module:
+    - text
+id: paragraph.contact_form.default
+targetEntityType: paragraph
+bundle: contact_form
+mode: default
+content:
+  field_body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_title:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_background_color: true

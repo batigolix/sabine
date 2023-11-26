@@ -4,3 +4,43 @@
  * @file
  * Primary module hooks for Sabine tools module.
  */
+
+/**
+ * Implements hook_preprocess_paragraph().
+ */
+function sabine_tools_preprocess_paragraph(&$vars) {
+  $paragraph = $vars['elements']['#paragraph'];
+
+  $vars['background'] = 'two';
+  if (isset($paragraph->field_background_color->value)) {
+    switch ($paragraph->field_background_color->value) {
+      case 'light_grey':
+        $vars['background'] = 'two';
+        break;
+
+      case 'lighter_grey':
+        $vars['background'] = 'three';
+        break;
+
+      case 'lightest_grey':
+        $vars['background'] = 'four';
+        break;
+    }
+  }
+  if ($paragraph->getType() === 'contact_form') {
+    $form = \Drupal::formBuilder()
+      ->getForm('Drupal\sabine_tools\Form\ContactForm');
+    $vars['contact_form'] = $form;
+  }
+}
+
+/**
+ * Implements hook_preprocess_field().
+ */
+function sabine_tools_preprocess_field(&$variables, $hook) {
+  $element = $variables['element'];
+  if ($element['#field_name'] == 'field_link') {
+    $variables['items'][0]['content']['#options']['attributes']['class'][] = 'button';
+    $variables['items'][0]['content']['#options']['attributes']['class'][] = 'scrolly';
+  }
+}

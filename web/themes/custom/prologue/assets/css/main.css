@@ -1437,11 +1437,13 @@ ul.icons a {
 form label {
   display: block;
   text-align: left;
-  margin-bottom: 0.5em;
+  margin: 0 0 0.5em 0;
+  font-weight: bold;
 }
 form input[type=text],
 form input[type=email],
 form input[type=password],
+form input[type=tel],
 form select,
 form textarea {
   position: relative;
@@ -1464,6 +1466,7 @@ form textarea {
 form input[type=text]:focus,
 form input[type=email]:focus,
 form input[type=password]:focus,
+form input[type=tel]:focus,
 form select:focus,
 form textarea:focus {
   box-shadow: 0 0 2px 1px #8ebebc;
@@ -1471,6 +1474,7 @@ form textarea:focus {
 }
 form input[type=text],
 form input[type=email],
+form input[type=tel],
 form input[type=password],
 form select {
   line-height: 1.25em;
@@ -1492,6 +1496,12 @@ form :-ms-input-placeholder {
 }
 form ::-moz-focus-inner {
   border: 0;
+}
+form .row .col-12, form .row .col-6 {
+  padding-top: 10px;
+}
+form .row .centered {
+  text-align: center;
 }
 
 /* Table */

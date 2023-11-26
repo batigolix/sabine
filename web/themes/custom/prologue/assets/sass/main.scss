@@ -396,12 +396,14 @@
 		label {
 			display: block;
 			text-align: left;
-			margin-bottom: 0.5em;
+			margin: 0 0 0.5em 0;
+      font-weight: bold;
 		}
 
 		input[type="text"],
 		input[type="email"],
-		input[type="password"],
+    input[type="password"],
+    input[type="tel"],
 		select,
 		textarea {
 			position: relative;
@@ -425,7 +427,8 @@
 		}
 
 		input[type="text"],
-		input[type="email"],
+    input[type="email"],
+    input[type="tel"],
 		input[type="password"],
 		select {
 			line-height: 1.25em;
@@ -454,6 +457,16 @@
 		::-moz-focus-inner {
 			border: 0;
 		}
+
+    .row {
+      .col-12, .col-6 {
+        padding-top: 10px;
+      }
+      .centered {
+        text-align: center;
+      }
+    }
+
 	}
 
 /* Table */

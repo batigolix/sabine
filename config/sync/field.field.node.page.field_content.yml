@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.storage.node.field_content
     - node.type.page
+    - paragraphs.paragraphs_type.contact_form
     - paragraphs.paragraphs_type.hero
     - paragraphs.paragraphs_type.text
   module:
@@ -24,9 +25,13 @@ settings:
   handler_settings:
     target_bundles:
       hero: hero
+      contact_form: contact_form
       text: text
     negate: 0
     target_bundles_drag_drop:
+      contact_form:
+        weight: 4
+        enabled: true
       hero:
         weight: 3
         enabled: true

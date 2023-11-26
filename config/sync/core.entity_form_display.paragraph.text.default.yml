@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.paragraph.text.field_background_color
     - field.field.paragraph.text.field_body
     - field.field.paragraph.text.field_image
     - field.field.paragraph.text.field_plain_title
@@ -16,6 +17,12 @@ targetEntityType: paragraph
 bundle: text
 mode: default
 content:
+  field_background_color:
+    type: options_select
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   field_body:
     type: text_textarea_with_summary
     weight: 2

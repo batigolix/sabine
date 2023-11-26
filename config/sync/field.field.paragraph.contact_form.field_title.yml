@@ -1,0 +1,24 @@
+uuid: 16facd60-afc8-415f-95ab-2cf239354b5d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title
+    - filter.format.basic_html
+    - paragraphs.paragraphs_type.contact_form
+  module:
+    - text
+id: paragraph.contact_form.field_title
+field_name: field_title
+entity_type: paragraph
+bundle: contact_form
+label: Title
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - basic_html
+field_type: text_long
