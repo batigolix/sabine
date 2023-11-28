@@ -1,0 +1,40 @@
+uuid: 9dfe6621-f384-4079-80f8-2a18d1bb3631
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.page
+  module:
+    - file
+    - menu_link_attributes
+    - node
+    - paragraphs
+    - path
+    - system
+    - toolbar
+id: webmaster
+label: Webmaster
+weight: 4
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'access files overview'
+  - 'access toolbar'
+  - 'administer nodes'
+  - 'create page content'
+  - 'create url aliases'
+  - 'delete all revisions'
+  - 'delete any file'
+  - 'delete any page content'
+  - 'delete own page content'
+  - 'delete page revisions'
+  - 'edit any page content'
+  - 'edit own page content'
+  - 'revert all revisions'
+  - 'revert page revisions'
+  - 'use menu link attributes'
+  - 'view all revisions'
+  - 'view own unpublished content'
+  - 'view page revisions'
+  - 'view the administration theme'
+  - 'view unpublished paragraphs'
