@@ -5,11 +5,13 @@ dependencies:
   config:
     - node.type.page
   module:
+    - environment_indicator
     - file
     - menu_link_attributes
     - node
     - paragraphs
     - path
+    - pathauto
     - system
     - toolbar
 id: webmaster
@@ -18,8 +20,11 @@ weight: 4
 is_admin: null
 permissions:
   - 'access administration pages'
+  - 'access content overview'
+  - 'access environment indicator'
   - 'access files overview'
   - 'access toolbar'
+  - 'administer menu'
   - 'administer nodes'
   - 'create page content'
   - 'create url aliases'
@@ -30,6 +35,7 @@ permissions:
   - 'delete page revisions'
   - 'edit any page content'
   - 'edit own page content'
+  - 'notify of path changes'
   - 'revert all revisions'
   - 'revert page revisions'
   - 'use menu link attributes'
