@@ -3,35 +3,23 @@
     label_display == 'visually_hidden' ? 'visually-hidden',
   ]
 %}
-{%
-  set classes = [
-'image',
-  'featured',
-]
-%}
-
-{% if label_hidden %}
-  {% if multiple %}
-    {% for item in items %}
-      <div {{ attributes.addClass(classes) }}>
-      {{ item.content }}
-      </div>
-    {% endfor %}
-  {% else %}
-    {% for item in items %}
-<div {{ attributes.addClass(classes) }}>
-      {{ item.content }}
+<div class="image featured">
+  {{ items|first.content }}
 </div>
+{% set secondary_items = items|slice(1) %}
+{% if secondary_items|length %}
+  {% set secondary_itemsPerColumn = (secondary_items|length / 3)|round(0, 'ceil') %}
+  <div class="row">
+    {% for secondary_item in secondary_items %}
+      {% if secondary_itemsPerColumn == 1 or loop.index % secondary_itemsPerColumn == 1 %}
+        <div class="col-4 col-12-mobile ">
+      {% endif %}
+      <article class="item">
+        <div class="image fit">{{ secondary_item.content }}</div>
+      </article>
+      {% if loop.last or loop.index % secondary_itemsPerColumn == 0 %}
+        </div>
+      {% endif %}
     {% endfor %}
-  {% endif %}
-{% else %}
-  <h3{{ title_attributes.addClass(title_classes) }}>{{ label }}</h3>
-  {% if multiple %}
-  {% endif %}
-  {% for item in items %}
-    {{ item.content }}
-  {% endfor %}
-  {% if multiple %}
-  {% endif %}
+  </div>
 {% endif %}
-

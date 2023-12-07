@@ -1,0 +1,17 @@
+uuid: e94f4c74-81e6-4358-9b8d-c0bd9ed691fb
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: xxl
+label: 'Extra extra large (1400 x ?)'
+effects:
+  d9381a66-76d0-431a-bc44-c83fc497d8b2:
+    uuid: d9381a66-76d0-431a-bc44-c83fc497d8b2
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 1400
+      height: 1050
+      crop_type: focal_point
