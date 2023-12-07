@@ -1,16 +1,16 @@
-uuid: 7f8ba600-e21f-47d5-af94-f78160c472e9
+uuid: 5f16388e-6dff-4aa4-ad32-5ced41448f77
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.paragraph.field_image
-    - paragraphs.paragraphs_type.text
+    - paragraphs.paragraphs_type.text_with_image
   module:
     - image
-id: paragraph.text.field_image
+id: paragraph.text_with_image.field_image
 field_name: field_image
 entity_type: paragraph
-bundle: text
+bundle: text_with_image
 label: Image
 description: ''
 required: false

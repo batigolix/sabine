@@ -14,6 +14,10 @@ function sabine_tools_preprocess_paragraph(&$vars) {
   $vars['background'] = 'two';
   if (isset($paragraph->field_background_color->value)) {
     switch ($paragraph->field_background_color->value) {
+      case 'grey':
+        $vars['background'] = 'five';
+        break;
+
       case 'light_grey':
         $vars['background'] = 'two';
         break;

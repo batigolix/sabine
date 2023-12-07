@@ -1,22 +1,25 @@
-uuid: 02f7c748-6d36-47e5-bf58-c4e6fae3e398
+uuid: 622daf10-0157-4672-ac37-416fa126c939
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.text.field_background_color
-    - field.field.paragraph.text.field_body
-    - field.field.paragraph.text.field_plain_title
-    - paragraphs.paragraphs_type.text
+    - field.field.paragraph.image.field_background_color
+    - field.field.paragraph.image.field_body
+    - field.field.paragraph.image.field_image
+    - field.field.paragraph.image.field_plain_title
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.image
   module:
+    - image
     - text
-id: paragraph.text.default
+id: paragraph.image.default
 targetEntityType: paragraph
-bundle: text
+bundle: image
 mode: default
 content:
   field_background_color:
     type: options_select
-    weight: 2
+    weight: 3
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -29,6 +32,14 @@ content:
       summary_rows: 3
       placeholder: ''
       show_summary: false
+    third_party_settings: {  }
+  field_image:
+    type: image_image
+    weight: 1
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
     third_party_settings: {  }
   field_plain_title:
     type: string_textfield

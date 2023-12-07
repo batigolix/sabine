@@ -5,12 +5,9 @@ dependencies:
   config:
     - field.field.paragraph.text.field_background_color
     - field.field.paragraph.text.field_body
-    - field.field.paragraph.text.field_image
     - field.field.paragraph.text.field_plain_title
-    - image.style.xl_wide
     - paragraphs.paragraphs_type.text
   module:
-    - image
     - text
 id: paragraph.text.default
 targetEntityType: paragraph
@@ -23,17 +20,6 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 2
-    region: content
-  field_image:
-    type: image
-    label: hidden
-    settings:
-      image_link: ''
-      image_style: xl_wide
-      image_loading:
-        attribute: lazy
-    third_party_settings: {  }
-    weight: 1
     region: content
   field_plain_title:
     type: string

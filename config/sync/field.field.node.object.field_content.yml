@@ -1,19 +1,18 @@
-uuid: a5cc7364-0fd9-4f65-978b-cd2929a6807e
+uuid: c6fff9ad-e595-46fb-92a9-b81b673b2d72
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_content
-    - node.type.page
-    - paragraphs.paragraphs_type.contact_form
-    - paragraphs.paragraphs_type.hero
-    - paragraphs.paragraphs_type.text_with_image
+    - node.type.object
+    - paragraphs.paragraphs_type.image
+    - paragraphs.paragraphs_type.text
   module:
     - entity_reference_revisions
-id: node.page.field_content
+id: node.object.field_content
 field_name: field_content
 entity_type: node
-bundle: page
+bundle: object
 label: Content
 description: ''
 required: false
@@ -24,24 +23,23 @@ settings:
   handler: 'default:paragraph'
   handler_settings:
     target_bundles:
-      hero: hero
-      contact_form: contact_form
-      text_with_image: text_with_image
+      image: image
+      text: text
     negate: 0
     target_bundles_drag_drop:
       contact_form:
-        weight: 4
-        enabled: true
+        weight: -7
+        enabled: false
       hero:
-        weight: 3
-        enabled: true
+        weight: -8
+        enabled: false
       image:
-        weight: 8
-        enabled: false
+        weight: -11
+        enabled: true
       text:
-        weight: 4
-        enabled: false
+        weight: -9
+        enabled: true
       text_with_image:
         weight: 10
-        enabled: true
+        enabled: false
 field_type: entity_reference_revisions
