@@ -10,7 +10,7 @@ dependencies:
     - image.style.thumbnail
     - paragraphs.paragraphs_type.image
   module:
-    - image
+    - focal_point
     - text
 id: paragraph.image.default
 targetEntityType: paragraph
@@ -34,12 +34,14 @@ content:
       show_summary: false
     third_party_settings: {  }
   field_image:
-    type: image_image
+    type: image_focal_point
     weight: 1
     region: content
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
+      preview_link: true
+      offsets: '50,50'
     third_party_settings: {  }
   field_plain_title:
     type: string_textfield
