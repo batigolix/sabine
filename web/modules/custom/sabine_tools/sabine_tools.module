@@ -36,6 +36,17 @@ function sabine_tools_preprocess_paragraph(&$vars) {
       ->getForm('Drupal\sabine_tools\Form\ContactForm');
     $vars['contact_form'] = $form;
   }
+
+
+
+  $paragraph = $vars['paragraph'];
+  $parent = $paragraph->getParentEntity();
+  // get all paragraph IDs sorted by weight
+  $weights = array_map( function($a) {return $a['target_id'];}, $parent->get($paragraph->get('parent_field_name')->value)->getValue());
+  // find the weight of my paragraph ID
+  $weight = array_search($paragraph->id(), $weights);
+  // ...do stuff with $weight... e.g. assign it to a Twig variable
+   $vars['weight'] = $weight;
 }
 
 /**

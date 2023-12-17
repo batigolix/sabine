@@ -8,10 +8,11 @@
   not paragraph.isPublished() ? 'paragraph--unpublished',
   'one'
 ] %}
+{% set title_tag = weight == 0 ? 'h1' : 'h2' %}
 <section id="top" {{ attributes.addClass(classes) }}>
   <div class="container">
     <header>
-      <h2 class="alt">{{ content.field_title }}</h2>
+      <{{ title_tag}} class="alt">{{ content.field_title }}</{{ title_tag }}>
     </header>
     {{ content.field_body }}
     <footer>{{ content.field_link }}

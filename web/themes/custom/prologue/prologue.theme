@@ -7,6 +7,13 @@
 
 use Drupal\Core\Render\Markup;
 
+
+//function prologue_preprocess_paragraph(&$variables){
+//  $node = \Drupal::request()->attributes->get('node');
+//  $variables['nodetitle'] = $node->getTitle();
+//}
+
+
 ///**
 // * Implements hook_page_attachments_alter().
 // */

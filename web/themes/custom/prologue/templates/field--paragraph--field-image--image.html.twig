@@ -14,9 +14,9 @@
       {% if secondary_itemsPerColumn == 1 or loop.index % secondary_itemsPerColumn == 1 %}
         <div class="col-4 col-12-mobile ">
       {% endif %}
-      <article class="item">
-        <div class="image fit">{{ secondary_item.content }}</div>
-      </article>
+          <article class="item">
+            <div class="image fit">{{ secondary_item.content }}</div>
+          </article>
       {% if loop.last or loop.index % secondary_itemsPerColumn == 0 %}
         </div>
       {% endif %}
