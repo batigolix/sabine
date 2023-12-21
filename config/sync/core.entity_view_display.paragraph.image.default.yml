@@ -3,29 +3,18 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.image.field_background_color
-    - field.field.paragraph.image.field_body
     - field.field.paragraph.image.field_image
-    - field.field.paragraph.image.field_plain_title
     - image.style.large
     - image.style.xl_wide
     - image.style.xxl
     - paragraphs.paragraphs_type.image
   module:
     - colorbox
-    - text
 id: paragraph.image.default
 targetEntityType: paragraph
 bundle: image
 mode: default
 content:
-  field_body:
-    type: text_default
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-    weight: 1
-    region: content
   field_image:
     type: colorbox
     label: hidden
@@ -40,13 +29,4 @@ content:
     third_party_settings: {  }
     weight: 2
     region: content
-  field_plain_title:
-    type: string
-    label: hidden
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    weight: 0
-    region: content
-hidden:
-  field_background_color: true
+hidden: {  }

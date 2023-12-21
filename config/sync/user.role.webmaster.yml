@@ -7,6 +7,7 @@ dependencies:
     - node.type.page
   module:
     - file
+    - menu_admin_per_menu
     - menu_link_attributes
     - node
     - paragraphs
@@ -22,7 +23,7 @@ permissions:
   - 'access content overview'
   - 'access files overview'
   - 'access toolbar'
-  - 'administer menu'
+  - 'administer main menu items'
   - 'administer nodes'
   - 'create object content'
   - 'create page content'
