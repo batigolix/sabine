@@ -26,4 +26,4 @@ visibility:
     context_mapping:
       node: '@node.node_route_context:node'
     bundles:
-      object: object
+      article: article
