@@ -4,8 +4,11 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.objects.field_background_color
+    - field.field.paragraph.objects.field_body
     - field.field.paragraph.objects.field_plain_title
     - paragraphs.paragraphs_type.objects
+  module:
+    - text
 id: paragraph.objects.default
 targetEntityType: paragraph
 bundle: objects
@@ -16,6 +19,16 @@ content:
     weight: 1
     region: content
     settings: {  }
+    third_party_settings: {  }
+  field_body:
+    type: text_textarea_with_summary
+    weight: 1
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
     third_party_settings: {  }
   field_plain_title:
     type: string_textfield

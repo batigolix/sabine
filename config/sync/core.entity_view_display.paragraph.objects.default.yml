@@ -4,13 +4,23 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.objects.field_background_color
+    - field.field.paragraph.objects.field_body
     - field.field.paragraph.objects.field_plain_title
     - paragraphs.paragraphs_type.objects
+  module:
+    - text
 id: paragraph.objects.default
 targetEntityType: paragraph
 bundle: objects
 mode: default
 content:
+  field_body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
   field_plain_title:
     type: string
     label: hidden

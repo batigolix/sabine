@@ -13,6 +13,7 @@
     <header>
       <{{ title_tag}} class="alt">{{ content.field_plain_title }}</{{ title_tag }}>
     </header>
+    {{ content.field_body }}
     {% if drupal_view_result('objects', 'default') is not empty %}
       {{ drupal_view('objects', 'default') }}
     {% endif %}
