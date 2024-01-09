@@ -1,0 +1,30 @@
+uuid: c1c3daae-e741-4510-93e9-57307c0ade65
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.objects.field_background_color
+    - field.field.paragraph.objects.field_plain_title
+    - paragraphs.paragraphs_type.objects
+id: paragraph.objects.default
+targetEntityType: paragraph
+bundle: objects
+mode: default
+content:
+  field_background_color:
+    type: options_select
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_plain_title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

@@ -1,0 +1,20 @@
+{% set classes = [
+  'paragraph',
+  'paragraph--type--' ~ paragraph.bundle|clean_class,
+  view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+  not paragraph.isPublished() ? 'paragraph--unpublished',
+  background,
+] %}
+
+{% set title_tag = weight == 0 ? 'h1' : 'h2' %}
+
+<section id="portfolio" {{ attributes.addClass(classes) }}>
+  <div class="container">
+    <header>
+      <{{ title_tag}} class="alt">{{ content.field_plain_title }}</{{ title_tag }}>
+    </header>
+    {% if drupal_view_result('objects', 'default') is not empty %}
+      {{ drupal_view('objects', 'default') }}
+    {% endif %}
+  </div>
+</section>

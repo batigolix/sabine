@@ -1,0 +1,28 @@
+uuid: 2f94799d-6336-43dc-a63e-08b7b7f481bb
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.teaser
+    - field.field.paragraph.image.field_image
+    - image.style.large
+    - paragraphs.paragraphs_type.image
+  module:
+    - image
+id: paragraph.image.teaser
+targetEntityType: paragraph
+bundle: image
+mode: teaser
+content:
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: large
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden: {  }

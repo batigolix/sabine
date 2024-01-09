@@ -1,0 +1,29 @@
+{# Prints only the first found image paragraph attached to this node #}
+
+{% set paragraphs = content.field_content['#items'] %}
+{% set count = 0 %}
+
+{# Cycles though all paragraphs attached o this node #}
+{% for key, item in paragraphs %}
+  {% set paragraph = content.field_content[key]['#paragraph'] %}
+  {% set type  = paragraph.type() %}
+
+  {#  Prints first found image paragraph. #}
+  {% if paragraph.type() == 'image' and count == 0 %}
+    {% set count = 1 %}
+
+    {# Print paragraph image with link to node #}
+    <a href="{{ url }}" class="image fit">{{ drupal_entity('paragraph', paragraph.id(), 'teaser') }}</a>
+    {% if label and not page %}
+
+      {# Print node title with link to node #}
+      <header{{ title_attributes }}>
+        <h3>
+          <a href="{{ url }}">{{ label }}</a>
+        </h3>
+      </header>
+    {% endif %}
+
+  {% endif %}
+
+{% endfor %}

@@ -7,16 +7,25 @@ dependencies:
     - field.field.node.object.field_content
     - node.type.object
   module:
+    - entity_reference_revisions
     - user
 id: node.object.teaser
 targetEntityType: node
 bundle: object
 mode: teaser
 content:
+  field_content:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: teaser
+      link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 100
+    weight: 1
     region: content
-hidden:
-  field_content: true
+hidden: {  }

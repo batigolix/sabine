@@ -1,0 +1,25 @@
+{#
+/**
+ * @file
+ * Theme override to display a view of unformatted rows.
+ * @see template_preprocess_views_view_unformatted()
+ */
+#}
+
+{# Print one image of each object node in a grid #}
+{% if rows|length %}
+  {% set rowsPerColumn = (rows|length / 3)|round(0, 'ceil') %}
+  <div class="row">
+    {% for row in rows %}
+      {% if rowsPerColumn == 1 or loop.index % rowsPerColumn == 1 %}
+        <div class="col-4 col-12-mobile ">
+      {% endif %}
+      <article class="item">
+        {{ row.content }}
+      </article>
+      {% if loop.last or loop.index % rowsPerColumn == 0 %}
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+{% endif %}

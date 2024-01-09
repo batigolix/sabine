@@ -1578,6 +1578,7 @@ button:active,
   margin: 0;
   padding: 1em 0 1em 0;
   font-size: 0.8em;
+  text-align: center;
 }
 .item header h3 {
   font-size: 1em;
