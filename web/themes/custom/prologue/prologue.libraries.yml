@@ -4,8 +4,8 @@ global-styling:
     base:
       assets/css/main.css: { weight: 555 }
   js:
-    assets/js/jquery.scrollex.min.js: {}
-    assets/js/jquery.scrolly.min.js: {}
+#    assets/js/jquery.scrollex.min.js: {}
+#    assets/js/jquery.scrolly.min.js: {}
     assets/js/browser.min.js: {}
     assets/js/breakpoints.min.js: {}
     assets/js/util.js: {}

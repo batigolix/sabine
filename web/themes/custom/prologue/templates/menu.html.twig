@@ -16,8 +16,12 @@ We call a macro which calls itself to render the full tree.
     {% endif %}
     {% for item in items %}
       {% set span_class = item.url.options.attributes.class.0 %}
+      {% set a_class = 'menu-link' %}
+      {% if item.in_active_trail %}
+        {% set a_class = a_class ~ ' active' %}
+      {% endif %}
       <li>
-        <a href="{{ item.url }}">
+        <a href="{{ item.url }}" class="{{ a_class }}">
         <span class="{{ span_class }}"> {{ item.title }}
         </span>
         </a>
