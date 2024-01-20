@@ -192,6 +192,10 @@ blockquote {
   border-left: solid 0.5em #ddd;
   padding: 1em 0 1em 2em;
   font-style: italic;
+  margin-bottom: 2em;
+}
+blockquote p {
+  margin: 0;
 }
 
 p, ul, ol, dl, table {
