@@ -8,9 +8,11 @@
 {% set title_tag = weight == 0 ? 'h1' : 'h2' %}
 <section id="top" {{ attributes.addClass(classes) }}>
   <div class="container">
+    {% if paragraph.field_plain_title is not empty %}
     <header>
       <{{ title_tag}} class="alt">{{ content.field_plain_title }}</{{ title_tag }}>
     </header>
+    {% endif %}
     {{ content.field_image }}
     {{ content.field_body }}
   </div>

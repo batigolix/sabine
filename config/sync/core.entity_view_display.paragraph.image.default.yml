@@ -5,7 +5,7 @@ dependencies:
   config:
     - field.field.paragraph.image.field_image
     - image.style.large
-    - image.style.xl_wide
+    - image.style.xl_high
     - image.style.xxl
     - paragraphs.paragraphs_type.image
   module:
@@ -20,7 +20,7 @@ content:
     label: hidden
     settings:
       colorbox_node_style: large
-      colorbox_node_style_first: xl_wide
+      colorbox_node_style_first: xl_high
       colorbox_image_style: xxl
       colorbox_gallery: post
       colorbox_gallery_custom: ''

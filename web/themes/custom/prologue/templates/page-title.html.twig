@@ -1,15 +1,12 @@
 {% set classes = [
-  'test',
+  'page-title',
 ] %}
 <section id="top" {{ attributes.addClass(classes) }}>
   <div class="container">
-    <header>
-      <h2 class="alt">{{ content.field_title }}</h2>
       {{ title_prefix }}
       {% if title %}
         <h1{{ title_attributes }}>{{ title }}</h1>
       {% endif %}
       {{ title_suffix }}
-    </header>
   </div>
 </section>

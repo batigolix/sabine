@@ -202,6 +202,10 @@ p, ul, ol, dl, table {
   margin-bottom: 2em;
 }
 
+p:last-child {
+  margin-bottom: 0;
+}
+
 br.clear {
   clear: both;
 }
