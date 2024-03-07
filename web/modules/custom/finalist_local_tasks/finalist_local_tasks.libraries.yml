@@ -1,0 +1,5 @@
+finalist-local-tasks:
+  version: 1.x
+  css:
+    theme:
+      css/finalist_local_tasks_theme.css: {}
