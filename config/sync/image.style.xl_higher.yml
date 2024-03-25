@@ -1,0 +1,25 @@
+uuid: 1ce70928-a6b3-4705-a34d-d081620df9b0
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: xl_higher
+label: 'Extra large high (1400 x 1400)'
+effects:
+  d59d0c13-c1dc-4e01-8804-214d13581bfe:
+    uuid: d59d0c13-c1dc-4e01-8804-214d13581bfe
+    id: image_scale_and_crop
+    weight: -9
+    data:
+      width: 1400
+      height: 1400
+      anchor: center-center
+  3b23cb42-9a6c-47df-a427-a9eeef9c08bb:
+    uuid: 3b23cb42-9a6c-47df-a427-a9eeef9c08bb
+    id: focal_point_scale_and_crop
+    weight: -10
+    data:
+      width: 1400
+      height: 1400
+      crop_type: focal_point

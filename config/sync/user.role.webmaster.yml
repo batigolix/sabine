@@ -3,7 +3,6 @@ langcode: en
 status: true
 dependencies:
   config:
-    - node.type.object
     - node.type.page
   module:
     - file
@@ -25,27 +24,19 @@ permissions:
   - 'access toolbar'
   - 'administer main menu items'
   - 'administer nodes'
-  - 'create object content'
   - 'create page content'
   - 'create url aliases'
   - 'delete all revisions'
   - 'delete any file'
-  - 'delete any object content'
   - 'delete any page content'
-  - 'delete object revisions'
-  - 'delete own object content'
   - 'delete own page content'
   - 'delete page revisions'
-  - 'edit any object content'
   - 'edit any page content'
-  - 'edit own object content'
   - 'edit own page content'
   - 'revert all revisions'
-  - 'revert object revisions'
   - 'revert page revisions'
   - 'use menu link attributes'
   - 'view all revisions'
-  - 'view object revisions'
   - 'view own unpublished content'
   - 'view page revisions'
   - 'view the administration theme'

@@ -7,7 +7,6 @@ dependencies:
     - node.type.page
     - paragraphs.paragraphs_type.contact_form
     - paragraphs.paragraphs_type.hero
-    - paragraphs.paragraphs_type.objects
     - paragraphs.paragraphs_type.text_with_image
   module:
     - entity_reference_revisions
@@ -25,28 +24,27 @@ settings:
   handler: 'default:paragraph'
   handler_settings:
     target_bundles:
+      text_with_image: text_with_image
       hero: hero
       contact_form: contact_form
-      objects: objects
-      text_with_image: text_with_image
     negate: 0
     target_bundles_drag_drop:
       contact_form:
-        weight: 4
+        weight: -11
         enabled: true
       hero:
-        weight: 3
+        weight: -12
         enabled: true
       image:
-        weight: 8
+        weight: -9
         enabled: false
       objects:
-        weight: 10
-        enabled: true
+        weight: -8
+        enabled: false
       text:
-        weight: 4
+        weight: -10
         enabled: false
       text_with_image:
-        weight: 10
+        weight: -13
         enabled: true
 field_type: entity_reference_revisions
