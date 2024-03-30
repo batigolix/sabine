@@ -18,8 +18,8 @@ jobs:
           debug: true
           script: |
             cd ${{ secrets.PRODUCTION_DIR }}
-            chmod a+w web/sites/default  || true
-            chmod a+w web/sites/default/settings.php || true
+            chmod a+w web/sites/default
+            chmod a+w web/sites/default/settings.php
             git reset --hard
             git checkout master
             git pull origin master
