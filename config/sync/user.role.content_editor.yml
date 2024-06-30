@@ -21,6 +21,7 @@ permissions:
   - 'access administration pages'
   - 'access content overview'
   - 'access files overview'
+  - 'access site in maintenance mode'
   - 'access toolbar'
   - 'administer url aliases'
   - 'create article content'
