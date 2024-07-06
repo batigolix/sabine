@@ -12,6 +12,9 @@ type: list_string
 settings:
   allowed_values:
     -
+      value: white
+      label: White
+    -
       value: grey
       label: Grey
     -

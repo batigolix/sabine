@@ -29,6 +29,10 @@ function sabine_tools_preprocess_paragraph(&$vars) {
       case 'lightest_grey':
         $vars['background'] = 'four';
         break;
+
+      case 'white':
+        $vars['background'] = 'zero';
+        break;
     }
   }
   if ($paragraph->getType() === 'contact_form') {

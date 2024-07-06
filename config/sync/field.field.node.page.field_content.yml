@@ -7,7 +7,8 @@ dependencies:
     - node.type.page
     - paragraphs.paragraphs_type.contact_form
     - paragraphs.paragraphs_type.hero
-    - paragraphs.paragraphs_type.text_with_image
+    - paragraphs.paragraphs_type.image
+    - paragraphs.paragraphs_type.text
   module:
     - entity_reference_revisions
 id: node.page.field_content
@@ -24,27 +25,28 @@ settings:
   handler: 'default:paragraph'
   handler_settings:
     target_bundles:
-      text_with_image: text_with_image
+      text: text
+      image: image
       hero: hero
       contact_form: contact_form
     negate: 0
     target_bundles_drag_drop:
       contact_form:
-        weight: -11
+        weight: -9
         enabled: true
       hero:
-        weight: -12
+        weight: -10
         enabled: true
       image:
-        weight: -9
-        enabled: false
+        weight: -12
+        enabled: true
       objects:
         weight: -8
         enabled: false
       text:
-        weight: -10
-        enabled: false
-      text_with_image:
         weight: -13
         enabled: true
+      text_with_image:
+        weight: -11
+        enabled: false
 field_type: entity_reference_revisions

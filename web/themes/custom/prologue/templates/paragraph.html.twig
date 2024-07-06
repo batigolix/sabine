@@ -47,7 +47,9 @@
   background
   ]
 %}
-{% set title_tag = weight == 0 ? 'h1' : 'h2' %}
+{#{% set title_tag = weight == 0 ? 'h1' : 'h2' %}#}
+{% set title_tag = 'h2' %}
+
 {% block paragraph %}
   <div{{ attributes.addClass(classes) }}>
     {% block content %}

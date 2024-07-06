@@ -4,11 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.contact_form.field_background_color
-    - field.field.paragraph.contact_form.field_body
-    - field.field.paragraph.contact_form.field_title
     - paragraphs.paragraphs_type.contact_form
-  module:
-    - text
 id: paragraph.contact_form.default
 targetEntityType: paragraph
 bundle: contact_form
@@ -19,24 +15,6 @@ content:
     weight: 2
     region: content
     settings: {  }
-    third_party_settings: {  }
-  field_body:
-    type: text_textarea_with_summary
-    weight: 1
-    region: content
-    settings:
-      rows: 9
-      summary_rows: 3
-      placeholder: ''
-      show_summary: false
-    third_party_settings: {  }
-  field_title:
-    type: text_textarea
-    weight: 0
-    region: content
-    settings:
-      rows: 2
-      placeholder: ''
     third_party_settings: {  }
 hidden:
   created: true

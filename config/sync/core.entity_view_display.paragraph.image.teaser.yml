@@ -4,7 +4,10 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.paragraph.teaser
+    - field.field.paragraph.image.field_background_color
+    - field.field.paragraph.image.field_caption
     - field.field.paragraph.image.field_image
+    - field.field.paragraph.image.field_plain_title
     - image.style.large
     - paragraphs.paragraphs_type.image
   module:
@@ -25,4 +28,7 @@ content:
     third_party_settings: {  }
     weight: 2
     region: content
-hidden: {  }
+hidden:
+  field_background_color: true
+  field_caption: true
+  field_plain_title: true

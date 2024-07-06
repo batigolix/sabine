@@ -8,7 +8,8 @@
   not paragraph.isPublished() ? 'paragraph--unpublished',
   'one'
 ] %}
-{% set title_tag = weight == 0 ? 'h1' : 'h2' %}
+{#{% set title_tag = weight == 0 ? 'h1' : 'h2' %}#}
+{% set title_tag = 'h2' %}
 <section id="top" {{ attributes.addClass(classes) }}>
   <div class="container">
     <header>

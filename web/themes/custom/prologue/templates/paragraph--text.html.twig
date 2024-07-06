@@ -5,7 +5,8 @@
   not paragraph.isPublished() ? 'paragraph--unpublished',
   background
 ] %}
-{% set title_tag = weight == 0 ? 'h1' : 'h2' %}
+{#{% set title_tag = weight == 0 ? 'h1' : 'h2' %}#}
+{% set title_tag = 'h2' %}
 <section id="top" {{ attributes.addClass(classes) }}>
   <div class="container">
     {% if paragraph.field_plain_title is not empty %}
