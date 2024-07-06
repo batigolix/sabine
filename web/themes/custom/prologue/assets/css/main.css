@@ -2094,7 +2094,7 @@ button:active,
     margin-left: 0;
   }
   #main > section {
-    padding: 3em 0;
+    padding: 1em 0 1em 0;
   }
   #main section.cover {
     padding: 4em 0;
@@ -2139,6 +2139,10 @@ button:active,
   }
   #footer .copyright li:first-child {
     margin-top: 0;
+  }
+  #cboxContent #cboxTitle {
+    bottom: -15px;
+    margin: 20px;
   }
 }
 
