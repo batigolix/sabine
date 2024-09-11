@@ -57,7 +57,7 @@
         "drupal/paragraphs": "^1.16",
         "drupal/pathauto": "^1.12",
         "drupal/twig_tweak": "^3.2",
-        "drush/drush": "^12.4",
+        "drush/drush": "^13.0",
         "harvesthq/chosen": "^1.8",
         "jackmoore/colorbox": "^1.6"
     },
