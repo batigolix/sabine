@@ -1370,16 +1370,16 @@
         },
         {
             "name": "drupal/core",
-            "version": "10.3.4",
+            "version": "10.3.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core.git",
-                "reference": "e5f1264a976a94b5e99c7ab7e15939bd6546d6ad"
+                "reference": "831a269a4d99957638977ec325c3346f896d9f08"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core/zipball/e5f1264a976a94b5e99c7ab7e15939bd6546d6ad",
-                "reference": "e5f1264a976a94b5e99c7ab7e15939bd6546d6ad",
+                "url": "https://api.github.com/repos/drupal/core/zipball/831a269a4d99957638977ec325c3346f896d9f08",
+                "reference": "831a269a4d99957638977ec325c3346f896d9f08",
                 "shasum": ""
             },
             "require": {
@@ -1528,13 +1528,13 @@
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
             "support": {
-                "source": "https://github.com/drupal/core/tree/10.3.4"
+                "source": "https://github.com/drupal/core/tree/10.3.5"
             },
-            "time": "2024-09-11T16:23:47+00:00"
+            "time": "2024-09-12T09:45:37+00:00"
         },
         {
             "name": "drupal/core-composer-scaffold",
-            "version": "10.3.4",
+            "version": "10.3.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-composer-scaffold.git",
@@ -1578,13 +1578,13 @@
                 "drupal"
             ],
             "support": {
-                "source": "https://github.com/drupal/core-composer-scaffold/tree/10.3.4"
+                "source": "https://github.com/drupal/core-composer-scaffold/tree/10.3.5"
             },
             "time": "2024-08-22T14:31:34+00:00"
         },
         {
             "name": "drupal/core-project-message",
-            "version": "10.3.4",
+            "version": "10.3.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-project-message.git",
@@ -1619,22 +1619,22 @@
                 "drupal"
             ],
             "support": {
-                "source": "https://github.com/drupal/core-project-message/tree/11.0.2"
+                "source": "https://github.com/drupal/core-project-message/tree/11.0.3"
             },
             "time": "2023-07-24T07:55:25+00:00"
         },
         {
             "name": "drupal/core-recommended",
-            "version": "10.3.4",
+            "version": "10.3.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-recommended.git",
-                "reference": "798638534011ea71a754b2171068229e5349b679"
+                "reference": "055a27d032e1fdcbac90976a14bdd152b368d761"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core-recommended/zipball/798638534011ea71a754b2171068229e5349b679",
-                "reference": "798638534011ea71a754b2171068229e5349b679",
+                "url": "https://api.github.com/repos/drupal/core-recommended/zipball/055a27d032e1fdcbac90976a14bdd152b368d761",
+                "reference": "055a27d032e1fdcbac90976a14bdd152b368d761",
                 "shasum": ""
             },
             "require": {
@@ -1643,7 +1643,7 @@
                 "doctrine/annotations": "~1.14.3",
                 "doctrine/deprecations": "~1.1.3",
                 "doctrine/lexer": "~2.1.1",
-                "drupal/core": "10.3.4",
+                "drupal/core": "10.3.5",
                 "egulias/email-validator": "~4.0.2",
                 "guzzlehttp/guzzle": "~7.8.1",
                 "guzzlehttp/promises": "~2.0.2",
@@ -1704,9 +1704,9 @@
             ],
             "description": "Core and its dependencies with known-compatible minor versions. Require this project INSTEAD OF drupal/core.",
             "support": {
-                "source": "https://github.com/drupal/core-recommended/tree/10.3.4"
+                "source": "https://github.com/drupal/core-recommended/tree/10.3.5"
             },
-            "time": "2024-09-11T16:23:47+00:00"
+            "time": "2024-09-12T09:45:37+00:00"
         },
         {
             "name": "drupal/crop",
@@ -2158,26 +2158,26 @@
         },
         {
             "name": "drupal/menu_admin_per_menu",
-            "version": "1.5.0",
+            "version": "1.6.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/menu_admin_per_menu.git",
-                "reference": "8.x-1.5"
+                "reference": "8.x-1.6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/menu_admin_per_menu-8.x-1.5.zip",
-                "reference": "8.x-1.5",
-                "shasum": "ec8c7a4a064aa285dfb722dad264da9936fc81b6"
+                "url": "https://ftp.drupal.org/files/projects/menu_admin_per_menu-8.x-1.6.zip",
+                "reference": "8.x-1.6",
+                "shasum": "8ebbab26f0dad2b1f79d7aa185295ca033eece7a"
             },
             "require": {
-                "drupal/core": "^9 || ^10"
+                "drupal/core": "^10.2 || ^11.0"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.5",
-                    "datestamp": "1660918821",
+                    "version": "8.x-1.6",
+                    "datestamp": "1726150514",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -2194,7 +2194,7 @@
                     "homepage": "https://www.drupal.org/user/410199"
                 },
                 {
-                    "name": "JeroenT",
+                    "name": "jeroent",
                     "homepage": "https://www.drupal.org/user/2228934"
                 },
                 {
@@ -2208,8 +2208,12 @@
             ],
             "description": "Allows to give roles per menu admin permissions without giving them full administer menu permission.",
             "homepage": "https://www.drupal.org/project/menu_admin_per_menu",
+            "keywords": [
+                "Drupal"
+            ],
             "support": {
-                "source": "https://git.drupalcode.org/project/menu_admin_per_menu"
+                "source": "https://git.drupalcode.org/project/menu_admin_per_menu",
+                "issues": "https://drupal.org/project/issues/menu_admin_per_menu"
             }
         },
         {
@@ -8429,7 +8433,7 @@
         },
         {
             "name": "drupal/core-dev",
-            "version": "10.3.4",
+            "version": "10.3.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-dev.git",
@@ -8479,7 +8483,7 @@
             ],
             "description": "require-dev dependencies from drupal/drupal; use in addition to drupal/core-recommended to run tests from drupal/core.",
             "support": {
-                "source": "https://github.com/drupal/core-dev/tree/10.3.4"
+                "source": "https://github.com/drupal/core-dev/tree/10.3.5"
             },
             "time": "2024-07-04T10:19:29+00:00"
         },
