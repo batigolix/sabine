@@ -50,7 +50,7 @@
         "drupal/ctools": "^4.0",
         "drupal/environment_indicator": "^4.0",
         "drupal/focal_point": "^2.0",
-        "drupal/gin": "^3.0@RC",
+        "drupal/gin": "^4.0.0@RC",
         "drupal/gin_toolbar": "^1.0@RC",
         "drupal/menu_admin_per_menu": "^1.5",
         "drupal/menu_link_attributes": "^1.3",
