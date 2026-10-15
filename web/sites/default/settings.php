@@ -794,3 +794,8 @@ if (strpos(DRUPAL_ROOT, 'stage')) {
   include '/home/doesborg/public_html/sabine-project/settings/stage.php';
 }
 
+$settings['enable_html5_validation'] = TRUE;
+
+$databases['default']['default']['init_commands']['isolation_level'] =
+  'SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED';
+
