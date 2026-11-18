@@ -20,7 +20,7 @@ jobs:
           php-version: '8.3'
           tools: composer:v2
       - name: Composer audit
-        run: composer audit --locked --format=plain
+        run: composer audit --locked --format=plain --abandoned=report
 
   npm-audit:
     runs-on: ubuntu-latest
