@@ -24,7 +24,6 @@ jobs:
 
   npm-audit:
     runs-on: ubuntu-latest
-    if: hashFiles('web/themes/custom/**/package-lock.json') != ''
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -32,6 +31,7 @@ jobs:
           node-version: '20'
       - name: NPM audit per theme
         run: |
+          shopt -s nullglob
           for lock in web/themes/custom/*/package-lock.json; do
             dir=$(dirname "$lock")
             echo "::group::$dir"

@@ -48,7 +48,6 @@ jobs:
 
   theme:
     runs-on: ubuntu-latest
-    if: hashFiles('web/themes/custom/**/package.json') != ''
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -58,6 +57,7 @@ jobs:
           cache-dependency-path: 'web/themes/custom/**/package-lock.json'
       - name: Install + build (per theme)
         run: |
+          shopt -s nullglob
           for pkg in web/themes/custom/*/package.json; do
             dir=$(dirname "$pkg")
             echo "::group::$dir"
