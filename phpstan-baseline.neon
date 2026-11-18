@@ -1,0 +1,7 @@
+parameters:
+	ignoreErrors:
+		-
+			message: '#^\\Drupal calls should be avoided in classes, use dependency injection instead$#'
+			identifier: globalDrupalDependencyInjection.useDependencyInjection
+			count: 2
+			path: web/modules/custom/sabine_tools/src/Form/ContactForm.php

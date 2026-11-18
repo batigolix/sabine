@@ -151,6 +151,8 @@
     "require-dev": {
         "drupal/coder": "^9.0",
         "drupal/core-dev": "^11",
-        "drupal/devel": "^5.1"
+        "drupal/devel": "^5.1",
+        "mglaman/phpstan-drupal": "^2.4",
+        "phpstan/phpstan": "^2.3"
     }
 }
