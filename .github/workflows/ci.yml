@@ -36,7 +36,7 @@ jobs:
 
       - name: PHPCS (Drupal + DrupalPractice)
         run: |
-          vendor/bin/phpcs -n \
+          bin/phpcs -n \
             --standard=Drupal,DrupalPractice \
             --extensions=php,module,inc,install,test,profile,theme,info,yml \
             --report=checkstyle \
@@ -44,7 +44,7 @@ jobs:
           | cs2pr
 
       - name: PHPStan
-        run: vendor/bin/phpstan analyse --no-progress --error-format=github
+        run: bin/phpstan analyse --no-progress --error-format=github
 
   theme:
     runs-on: ubuntu-latest
