@@ -1,7 +1,7 @@
 {
   "name": "prologue",
   "scripts": {
-    "build": "sass scss css",
+    "build": "sass assets/sass:assets/css --no-source-map",
     "watch": "sass assets/sass:assets/css -w"
   },
   "dependencies": {
