@@ -5,7 +5,7 @@ package: Other
 libraries:
   - prologue/global-styling
   - prologue/custom
-base theme: stable9
+base theme: stable
 
 regions:
   nav: Navigation

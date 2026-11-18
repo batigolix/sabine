@@ -1,19 +1,58 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "config:recommended"
+    "config:recommended",
+    ":semanticCommitTypeAll(chore)",
+    ":prHourlyLimitNone",
+    "group:recommended",
+    "group:allNonMajor"
   ],
+  "timezone": "Europe/Amsterdam",
+  "schedule": ["before 6am on monday"],
+  "labels": ["dependencies"],
+  "prConcurrentLimit": 5,
+  "rangeStrategy": "bump",
+  "composer": {
+    "enabled": true
+  },
+  "npm": {
+    "enabled": true
+  },
   "packageRules": [
     {
-      "matchPackagePatterns": [
-        "*"
+      "matchManagers": ["composer"],
+      "matchPackageNames": [
+        "drupal/core",
+        "drupal/core-recommended",
+        "drupal/core-composer-scaffold",
+        "drupal/core-project-message",
+        "drupal/core-dev"
       ],
-      "matchUpdateTypes": [
-        "minor",
-        "patch"
+      "groupName": "Drupal core"
+    },
+    {
+      "matchManagers": ["composer"],
+      "matchPackagePrefixes": ["drupal/"],
+      "excludePackageNames": [
+        "drupal/core",
+        "drupal/core-recommended",
+        "drupal/core-composer-scaffold",
+        "drupal/core-project-message",
+        "drupal/core-dev"
       ],
-      "groupName": "all non-major dependencies",
-      "groupSlug": "all-minor-patch"
+      "matchUpdateTypes": ["minor", "patch"],
+      "groupName": "Drupal contrib (minor + patch)"
+    },
+    {
+      "matchDepTypes": ["devDependencies", "require-dev"],
+      "schedule": ["before 6am on monday"]
     }
-  ]
+  ],
+  "vulnerabilityAlerts": {
+    "enabled": true,
+    "labels": ["security"],
+    "schedule": ["at any time"],
+    "prPriority": 10
+  },
+  "osvVulnerabilityAlerts": true
 }

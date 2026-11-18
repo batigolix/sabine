@@ -54,6 +54,6 @@ module:
 theme:
   claro: 0
   gin: 0
-  stable9: 0
   prologue: 0
+  stable: 0
 profile: minimal
