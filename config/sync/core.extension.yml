@@ -2,6 +2,7 @@ _core:
   default_config_hash: R4IF-ClDHXxblLcG0L7MgsLvfBIMAvi_skumNFQwkDc
 module:
   automated_cron: 0
+  ban: 0
   big_pipe: 0
   block: 0
   block_content: 0
@@ -38,7 +39,10 @@ module:
   page_cache: 0
   path: 0
   path_alias: 0
+  perimeter: 0
+  redirect: 0
   sabine_tools: 0
+  simple_sitemap: 0
   system: 0
   text: 0
   token: 0
