@@ -28,6 +28,7 @@
 # Development files.
 /web/sites/default/settings.local.php
 /web/sites/default/local.services.yml
+/web/sites/default/services.local.yml
 /data
 /config/robo
 /project-config
@@ -164,3 +165,6 @@ tests/backstop/backstop_data
 .dolt/
 *.db
 .beads-credential-key
+
+# config_split development_configuration export target (local-only).
+/config_dev/

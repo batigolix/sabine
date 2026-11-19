@@ -655,6 +655,13 @@ $settings['update_free_access'] = FALSE;
 $settings['container_yamls'][] = $app_root . '/' . $site_path . '/services.yml';
 
 /**
+ * Load local services overrides (dev only, gitignored).
+ */
+if (file_exists($app_root . '/' . $site_path . '/services.local.yml')) {
+  $settings['container_yamls'][] = $app_root . '/' . $site_path . '/services.local.yml';
+}
+
+/**
  * Override the default service container class.
  *
  * This is useful for example to trace the service container for performance
@@ -786,12 +793,20 @@ if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
   include $app_root . '/' . $site_path . '/settings.local.php';
 }
 
-if (strpos(DRUPAL_ROOT, 'production')) {
-  include '/home/doesborg/public_html/sabine-project/settings/production.php';
+$sabine_env = $_ENV['SABINE_ENV'] ?? NULL;
+
+// Legacy fallback: detect env from path if SABINE_ENV not set on the host.
+if (!$sabine_env) {
+  if (strpos(DRUPAL_ROOT, 'production') !== FALSE) {
+    $sabine_env = 'production';
+  }
+  elseif (strpos(DRUPAL_ROOT, 'stage') !== FALSE) {
+    $sabine_env = 'stage';
+  }
 }
 
-if (strpos(DRUPAL_ROOT, 'stage')) {
-  include '/home/doesborg/public_html/sabine-project/settings/stage.php';
+if ($sabine_env && file_exists("/home/doesborg/public_html/sabine-project/settings/{$sabine_env}.php")) {
+  include "/home/doesborg/public_html/sabine-project/settings/{$sabine_env}.php";
 }
 
 $settings['enable_html5_validation'] = FALSE;

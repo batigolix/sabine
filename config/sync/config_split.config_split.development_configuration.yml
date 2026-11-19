@@ -1,0 +1,21 @@
+uuid: 17a45f2b-d6df-40fe-bfd3-00402d6346db
+langcode: en
+status: false
+dependencies:
+  enforced:
+    module:
+      - config_split
+id: development_configuration
+label: 'Development configuration'
+description: 'Splits devel + devel_generate out of the mainline config so they are only enabled on environments that override status to TRUE (via settings.local.php).'
+weight: 0
+stackable: false
+no_patching: false
+storage: folder
+folder: ../config_dev
+module:
+  devel: 0
+  devel_generate: 0
+theme: {  }
+complete_list: {  }
+partial_list: {  }
