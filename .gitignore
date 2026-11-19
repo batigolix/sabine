@@ -164,3 +164,6 @@ tests/backstop/backstop_data
 .dolt/
 *.db
 .beads-credential-key
+
+# config_split development_configuration export target (local-only).
+/config_dev/
