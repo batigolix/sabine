@@ -10,7 +10,6 @@ dependencies:
     - node
     - path
     - system
-    - toolbar
 _core:
   default_config_hash: NtMgnXp0miNtJhag07NSjwdCm4zpJwhlDFs1HgyL4wI
 id: content_editor
@@ -22,7 +21,6 @@ permissions:
   - 'access content overview'
   - 'access files overview'
   - 'access site in maintenance mode'
-  - 'access toolbar'
   - 'administer url aliases'
   - 'create article content'
   - 'create page content'
