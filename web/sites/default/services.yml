@@ -6,3 +6,7 @@ parameters:
     cookie_lifetime: 2000000
     cookie_samesite: Lax
     name_suffix: ''
+  twig.config:
+    debug: false
+    auto_reload: false
+    cache: true
