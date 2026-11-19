@@ -159,3 +159,8 @@ web/.deployed_tag
 /.editorconfig
 
 tests/backstop/backstop_data
+
+# Beads / Dolt files (added by bd init)
+.dolt/
+*.db
+.beads-credential-key
