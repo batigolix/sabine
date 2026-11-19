@@ -32,13 +32,13 @@
     },
     {
       "matchManagers": ["composer"],
-      "matchPackagePrefixes": ["drupal/"],
-      "excludePackageNames": [
-        "drupal/core",
-        "drupal/core-recommended",
-        "drupal/core-composer-scaffold",
-        "drupal/core-project-message",
-        "drupal/core-dev"
+      "matchPackageNames": [
+        "drupal/**",
+        "!drupal/core",
+        "!drupal/core-recommended",
+        "!drupal/core-composer-scaffold",
+        "!drupal/core-project-message",
+        "!drupal/core-dev"
       ],
       "matchUpdateTypes": ["minor", "patch"],
       "groupName": "Drupal contrib (minor + patch)"
