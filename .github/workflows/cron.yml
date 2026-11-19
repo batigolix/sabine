@@ -1,0 +1,28 @@
+# AI generated
+name: Scheduled cron (production)
+on:
+  schedule:
+    # Every 15 minutes. GitHub may delay scheduled runs by 5-15 min under load.
+    - cron: '*/15 * * * *'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: cron-prod
+  cancel-in-progress: false
+jobs:
+  prod-cron:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run drush core:cron via SSH
+        uses: appleboy/ssh-action@v1.2.2
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          key: ${{ secrets.PRIVATE_KEY }}
+          port: 7822
+          script_stop: true
+          debug: true
+          script: |
+            cd ${{ secrets.PRODUCTION_DIR }}
+            timeout 600 bin/drush core:cron
