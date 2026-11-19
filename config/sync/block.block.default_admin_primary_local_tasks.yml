@@ -1,13 +1,13 @@
-uuid: 735d488e-65c1-4190-b7f6-5ce6f046b2de
+uuid: c2bfff07-29cc-4678-81d9-b57565c496ea
 langcode: en
 status: true
 dependencies:
   theme:
-    - gin
+    - default_admin
 _core:
-  default_config_hash: Hh01DLj9k7UnNdPpOQXHZHW7GHf2OPNDQyCJF7_R9ac
-id: gin_primary_local_tasks
-theme: gin
+  default_config_hash: KxeVrufbNdEHyWTX59ecZS4IKqRyAZHDmElZrPbUMmo
+id: default_admin_primary_local_tasks
+theme: default_admin
 region: header
 weight: 0
 provider: null
