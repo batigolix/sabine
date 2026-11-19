@@ -46,6 +46,12 @@
     {
       "matchDepTypes": ["devDependencies", "require-dev"],
       "schedule": ["before 6am on monday"]
+    },
+    {
+      "description": "Skip custom inline composer package (not on Packagist). Pinned to 1.6.4 via repositories.colorbox in composer.json; update manually.",
+      "matchManagers": ["composer"],
+      "matchPackageNames": ["jackmoore/colorbox"],
+      "enabled": false
     }
   ],
   "vulnerabilityAlerts": {
