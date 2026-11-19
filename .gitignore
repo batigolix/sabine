@@ -28,6 +28,7 @@
 # Development files.
 /web/sites/default/settings.local.php
 /web/sites/default/local.services.yml
+/web/sites/default/services.local.yml
 /data
 /config/robo
 /project-config

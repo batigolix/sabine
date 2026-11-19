@@ -655,6 +655,13 @@ $settings['update_free_access'] = FALSE;
 $settings['container_yamls'][] = $app_root . '/' . $site_path . '/services.yml';
 
 /**
+ * Load local services overrides (dev only, gitignored).
+ */
+if (file_exists($app_root . '/' . $site_path . '/services.local.yml')) {
+  $settings['container_yamls'][] = $app_root . '/' . $site_path . '/services.local.yml';
+}
+
+/**
  * Override the default service container class.
  *
  * This is useful for example to trace the service container for performance
