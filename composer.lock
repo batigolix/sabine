@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f0470f7e9e85cef93dabe29996291019",
+    "content-hash": "29e3948a7476f709ba44edb9b2e0e319",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -864,6 +864,15 @@
                 "source": "https://github.com/consolidation/site-process/tree/6.1.0"
             },
             "time": "2026-06-07T03:26:06+00:00"
+        },
+        {
+            "name": "cure53/dompurify",
+            "version": "3.4.18",
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/cure53/DOMPurify/archive/refs/tags/3.4.18.zip"
+            },
+            "type": "drupal-library"
         },
         {
             "name": "dflydev/dot-access-data",
